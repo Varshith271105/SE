@@ -1,0 +1,10 @@
+
+docker compose up -d
+docker compose ps
+
+http://localhost:8080/eduAssessPro
+
+docker exec -it edc-db mysql -u edc -p
+;
+CREATE TABLE ExamResults (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(50), maths INT, phy INT,chem INT,total INT);
+SELECT * FROM users;
